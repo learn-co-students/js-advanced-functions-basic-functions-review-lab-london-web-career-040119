@@ -33,11 +33,11 @@ const Calculator = {
     }
 }
 
-const actionApplyer = (start, ray) => {
+const actionApplyer = (start, arr) => {
     let a = start
   
-    for (let i = 0; i < ray.length; i++ ){
-      a = ray[i](a)
+    for (let i = 0; i < arr.length; i++ ){
+      a = arr[i](a)
     }
   
     return a
